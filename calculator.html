@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='32710075-2',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="http://www.platowebdesign.com/Graphics/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="http://www.platowebdesign.com/Graphics/favicon.png" type="image/x-icon"> 
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+<meta name="description" content="Get a web design cost estimate in 30 seconds or less, with the world's simplest web design cost calculator. No gimmicks, no sales pitch, just real website cost data provided to you free of charge.">
+<title>Internal - Client Grade Calculator</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="home-apge">
+<div class="main-frame">
+<!-- /.header -->
+  <!-- Start: content-row -->
+
+<style type="text/css">
+
+
+input[type='text'] {
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    color: #333;
+    font-family: 'DINPro-Regular';
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    min-height: 44px;
+    padding: 5px 10px;
+    width: 100%;
+	
+}
+
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+body.viewport-lg {
+    position: absolute; 
+}
+#addResponsive { border:0; }
+.quote-field textarea{
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+  padding: 10px;
+}
+.container-fluid.order-form-custom{
+  max-width: 750px;
+}
+input[type='email'] {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+  color: #333;
+  font-family: 'DINPro-Regular';
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  min-height: 44px;
+  padding: 5px 10px;
+  width: 100%;
+}
+.get-started{
+  background: #202020; /* Old browsers */
+  background: -moz-linear-gradient(top,  #202020 0%, #202020 49%, #202020 49%, #202020 50%, #000000 50%, #000000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#202020), color-stop(49%,#202020), color-stop(49%,#202020), color-stop(50%,#202020), color-stop(50%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #202020 0%,#202020 49%,#202020 49%,#202020 50%,#000000 50%,#000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #202020 0%,#202020 49%,#202020 49%,#202020 50%,#000000 50%,#000000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #202020 0%,#202020 49%,#202020 49%,#202020 50%,#000000 50%,#000000 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #202020 0%,#202020 49%,#202020 49%,#202020 50%,#000000 50%,#000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0 !important;
+  font-size: 22px;
+  letter-spacing: 2px;
+  border: none;
+  transition: all .3s ease-in-out 0s;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  margin-top: 10px;
+}
+.get-started:hover{
+  color: rgb(253, 202, 0); /* Old browsers */
+}
+.modal-content{
+  background: #ffd11a; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #ffd11a 0%, #fca117 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffd11a), color-stop(100%,#fca117)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #ffd11a 0%,#fca117 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #ffd11a 0%,#fca117 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #ffd11a 0%,#fca117 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #ffd11a 0%,#fca117 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd11a', endColorstr='#fca117',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  position: relative;
+}
+.modal-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/bg-transparent-modal.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.quote-field input[type='text'], .quote-field input[type='email']{
+  background-color: white;
+}
+.modal-header{
+  border-bottom: 0;
+  padding: 35px;
+  padding-bottom: 0px;
+}
+.modal-body{
+  padding-top: 0;
+}
+.modal-header .close{
+  color: white;
+  opacity: 1;
+  font-size: 27px;
+  margin-top: -10px;
+  cursor: pointer;
+  position: relative;
+}
+.modal-header .close:focus, .get-started:focus{
+  outline: none;
+  border: none;
+  padding: 0;
+}
+.inner-content h4, .after-title-info{
+  padding: 0;
+  font-weight: bold;
+  text-shadow: 3px 3px rgba(43, 43, 43, 0.26);
+  color: white !important;
+  margin-bottom: 0 !important;
+}
+
+.after-title-info { 
+text-shadow: 1px 1px rgba(43, 43, 43, 0.26);
+}
+
+input, textarea { border:none; }
+.inner-content h4{
+  font-size: 52px;
+  padding: 0;
+  font-weight: bold;
+  text-shadow: 3px 3px rgba(43, 43, 43, 0.46);
+  font-style: normal;
+  line-height:105%;
+}
+p.after-title-info{
+  padding: 20px 0;
+  font-size: 20px;
+  opacity: 0.9;
+}
+.plato-logo-white{
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  max-width: 120px;
+  max-height: 30px;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+.text-success{
+    color: #3c763d !important;
+}
+@media (max-width: 979px) {
+  .plato-logo-white{
+    top: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .get-started{
+    font-size: 18px;
+  }
+  .modal-header{
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .inner-content h4{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .modal-header .close{
+    margin-top: -55px;
+  }
+  .inner-content p{
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+    .get-started{
+      width: 97%;
+    }
+}
+@media (max-width: 480px) {
+  .inner-content h4{
+    font-size: 32px;
+  }
+  .get-started{
+    font-size: 16px;
+  }
+}
+</style>
+
+<script src="calform.js"></script>
+ <form class="jqTransform" action="get-a-quote.php" id="calForm">
+  <div class="row-fluid content-row inner-content">
+    <div class="container-fluid">
+      <div class="row">
+      
+      <div class="col-md-4 price-sidebar"> 
+            <div id="price-sidebar">
+        	<div class="pricetag-outer">
+            	<div class="price-tag">
+                	<span>Client Rating:</span>
+                    <strong><div id='total'></div></strong>                </div>
+            </div>
+            </div>
+         </div>
+        <!-- /.price-sidebart -->
+      
+        <div class="col-md-8 price-content">
+
+            <h2>Client Grade Calculator</h2>
+            <h5>This tool is used for an objective way to grade clients</h5>
+            <div class="price-form row-fluid">
+              
+            <div class="price-field">
+              	<div class="field-icon">
+                    <h3>Was the Client fun to work with</h3>
+                </div>
+                <div class="field-frm">
+                   	<ul>
+                    	<li><input type="radio"  name="question1" value="q1a1" onclick="calculateTotal()" ><label>Yes</label></li>
+                        <li><input type="radio"  name="question1" value="q1a2" onclick="calculateTotal()" ><label>No</label></li>
+                    </ul>
+			
+                </div>
+            </div>
+            <div class="price-field">
+              	<div class="field-icon">
+                    <h3>Did the client follow our process?</h3>
+                </div>
+                <div class="field-frm">
+                   	<ul>
+                    	<li><input type="radio"  name="question2" value="q2a1" onclick="calculateTotal()" ><label>Yes</label></li>
+                        <li><input type="radio"  name="question2" value="q2a2" onclick="calculateTotal()" ><label>No</label></li>
+                    </ul>
+			
+                </div>
+            </div>
+            <div class="price-field">
+              	<div class="field-icon">
+                    <h3>Did the client pay their bill on time?</h3>
+                </div>
+                <div class="field-frm">
+                   	<ul>
+                    	<li><input type="radio"  name="question3" value="q3a1" onclick="calculateTotal()" ><label>Yes</label></li>
+                        <li><input type="radio"  name="question3" value="q3a2" onclick="calculateTotal()" ><label>No</label></li>
+                    </ul>
+			
+                </div>
+              </div>
+            <div class="price-field">
+              	<div class="field-icon">
+                    <h3>Was the Client pleasent to work with</h3>
+                </div>
+                <div class="field-frm">
+                   	<ul>
+                    	<li><input type="radio"  name="question4" value="q4a1" onclick="calculateTotal()" ><label>Yes</label></li>
+                        <li><input type="radio"  name="question4" value="q4a2" onclick="calculateTotal()" ><label>No</label></li>
+                    </ul>
+			
+                </div>
+              </div>
+                
+              <!-- /.price-field -->
+                        
+              
+            </div>
+            <!-- /.price-form -->
+            
+               
+          </div>
+        <!-- ./price-content -->
+        
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- container-fluid -->
+    <!-- /.free-quote -->
+  </div>
+  
+  
+
+  </form>
+  <!-- End: content-row -->
+
+<!-- /.main-frame -->
+<!--<script src="js/jquery-1.7.1.min.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+      
+	 /* 
+	 	 $('.flexslider').flexslider({
+        animation: "slide",
+		animationLoop: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      	});
+	  
+	  
+	
+	  
+	  }*/
+	  
+	  
+	  
+    });
+  </script>
+<script type="text/javascript" src="js/jquery.jqtransform.js" ></script>
+<script language="javascript">
+		$(function(){
+			$('.jqTransform').jqTransform({imgPath:'jqtransformplugin/img/'});
+		});
+</script>
+
+
+<!-- SessionCam Client Integration v6.0 -->
+
+
+
+
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1016373663;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1016373663/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+<!--<script src="js/jquery-1.7.1.min.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.jqtransform.js" ></script>
+<script language="javascript">
+		$(function(){
+			$('.jqTransform').jqTransform({imgPath:'jqtransformplugin/img/'});
+		});
+	</script>
+
+<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function() {
+        // Order matters here because we are dependent on the state of the footer above for
+        // our limit.  The footer must be set first; otherwise, we will not be in the right
+        // position on a window refresh, if the limit is supposed to be invoked.
+        
+		var aff =  $("#Affiliate").val();
+		
+		$('#price-sidebar').scrollToFixed({
+            marginTop: 0,
+            limit: function() {
+                var limit = $('.guide').offset().top - $('#price-sidebar').outerHeight(true) - 70;
+                return limit;
+            },
+            minWidth: 300,
+            zIndex: 999,
+            fixed: function() {  },
+            dontCheckForPositionFixedSupport: true
+        });
+
+        $("#addResponsive").on('click', function(){
+          if( $("#responsive").val() == 'No'){
+            $("#responsive").val('Yes');
+          }
+          else{
+            $("#responsive").val('No');
+          }
+        });
+
+        $('#orderModal').on('shown.bs.modal', function () {
+          $('#name').focus();
+        })
+
+        $(".get-started").on('click', function(e){
+          e.preventDefault();
+          var seo = $("#seoCheckboxes input[type='checkbox']:checked"), extra = $("#extraFeatures input[type='checkbox']:checked"), seoOptions = {}, extraOptions = {}, i = 0;
+          
+          seo.each(function(){
+            seoOptions[i] = $(this).next().text();
+            i++;
+          });
+          extra.each(function(){
+            extraOptions[i] = $(this).val();
+            i++;
+          });
+
+          var dataToSend = {
+            // PopUp form data
+            name: $("#Full_Name__e__r").val(), 
+            phone: $("#Phone__e__r").val(),
+            email: $("#Email__e__r").val(),
+            about_project: $("#Project_Details__e__r").val(),
+            // Type of design
+            customDesign: $("#customDesign").val(),
+            // Number of pages
+            numberOfPages: $("#websitePageOptions").val(),
+            // Responsive? 
+            responsive: $("#responsive").val(),
+            // Do you want an ecommerce site?
+            ecommerce: $("input[name='question1']:checked + label").text(),
+            // SEO
+            seo: seoOptions,
+            // Extra options
+            extras: extraOptions,
+			affiliate: aff,
+            // Total
+            total: $("#total").text()
+          };
+          $.ajax({
+            method: "POST",
+            url: "popup-form-handler.php",
+            data: dataToSend
+          })
+          .done(function( msg ) {
+            $(".order-form-custom").hide(800);
+            $(".after-title-info").html('Thanks for getting in touch!<br> Need quicker support? Feel free to call us at 1-717-903-3471. We\'d love to help!');
+            setTimeout(function(){
+              $('.modal.fade').modal('hide');
+            }, 5000);
+          });
+
+        });
+
+    });
+
+</script>
+
+    
+</body>
+</html>
